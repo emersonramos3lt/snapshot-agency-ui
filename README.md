@@ -13,6 +13,8 @@ Developed using **HTML, CSS, and JavaScript**, the website delivers a **smooth a
 - **Responsive design**, perfectly adapting to all screen sizes for seamless browsing  
 - **Black and white color palette** for a clean, high-end aesthetic  
 - **Smooth hover effects** that bring content to life while maintaining a minimalist look  
+- **Animated image slider** created with HTML and CSS keyframes, featuring smooth transitions  
+- **Pause-on-hover effect**: when hovering over an image in the slider, the animation pauses and that specific image retains its color while the others turn black and white — drawing the viewer’s focus to the image under the cursor
 
 ---
 
