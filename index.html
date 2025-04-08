@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="circle"></div>
+
+    <div class="container">
+      <header class="nav-container">
+        <nav class="nav">
+          <div class="nav-logo nav-item">
+            <a href="#">Lumière Studio</a>
+          </div>
+          <div class="nav-links nav-item">
+            <a href="#">About</a>
+            <a href="#">Work</a>
+            <a href="#">Journal</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="nav-cta nav-item">
+            <a href="#">Connect with us</a>
+          </div>
+        </nav>
+      </header>
+      <div class="hero-container">
+        <div class="hero">
+          <h1>Framing Moments, Creating Art.</h1>
+          <button class="btn btn-animated">Questions? Contact us!</button>
+          <p>
+            Photography is an art form, and we approach every project with a
+            designer’s eye and an artist’s soul. Whether it's a personal
+            portrait, a brand campaign, or a cinematic editorial, we focus on
+            blending creativity with technical expertise to deliver visually
+            striking, timeless imagery.
+          </p>
+        </div>
+      </div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <main>
+      <section class="about-us">
+        <div>
+          <h3 data-aos="fade-up" data-aos-duration="1500">ABOUT US</h3>
+          <h2 data-aos="fade-up" data-aos-duration="2500">
+            At Lumière Studio, we believe that photography is the art of
+            painting with light. Our mission is to transform fleeting moments
+            into timeless visual.
+          </h2>
+        </div>
+        <div>
+          <img
+            data-aos="fade-up"
+            data-aos-duration="5000"
+            src="./images/about-us.jpg"
+            alt="Woman in a black coat"
+          />
+        </div>
+      </section>
+
+      <section class="project">
+        <section class="project-content">
+          <h1 data-aos="fade-up" data-aos-duration="2000">
+            Captures that <span>define</span> us.
+          </h1>
+
+          <div class="slider" style="--w: 500px; --h: 500px; --quantity: 5">
+            <div class="list">
+              <div class="item" style="--position: 1">
+                <img src="./images/slider-1.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 2">
+                <img src="./images/slider-2.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 3">
+                <img src="./images/slider-3.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 4">
+                <img src="./images/slider-4.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 5">
+                <img src="./images/slider-5.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="why-us">
+        <section class="why-us-content">
+          <h1 data-aos="fade-up" data-aos-duration="2000">Why us?</h1>
+          <p data-aos="fade-up" data-aos-duration="3000">
+            At Lumière Studio, we don’t just take photos—we craft visual
+            experiences. Our passion for photography goes beyond the lens,
+            blending creativity, storytelling, and technical expertise to
+            deliver images that leave a lasting impact.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="grid-footer">
+        <div>
+          <h4>(Pages)</h4>
+
+          <a href="#">Home</a>
+          <a href="#">Posts</a>
+          <a href="#">Contests</a>
+        </div>
+        <div>
+          <h4>(Gallery)</h4>
+
+          <a href="#">Best photos | 2024</a>
+          <a href="#">Most liked</a>
+          <a href="#">Recent projects</a>
+        </div>
+        <div>
+          <h4>(Contact)</h4>
+          <a href="#"><span>+12 345 678 90</span></a>
+          <a href="#">lumiere@email.com</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p class="copy-text">Copyright &copy; Created by Emerson 👨‍💻. All Rights Reserved</p>
+
+       <p>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-pinterest"></i>
+       </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+      integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.from(".nav-container", 2, {
+        opacity: 0,
+        y: -60,
+        ease: "power3.inOut",
+        delay: 0.5,
+      });
+
+      gsap.from(".hero > *", 1, {
+        opacity: 0,
+        y: 60,
+        ease: "power3.inOut",
+        delay: 1,
+        stagger: {
+          amount: 0.5,
+        },
+      });
+
+      gsap.from(".blob", 2, {
+        scale: 0,
+        ease: "power3.inOut",
+        delay: 1.5,
+        stagger: {
+          amount: 0.5,
+        },
+      });
+    </script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
