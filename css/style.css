@@ -164,6 +164,7 @@ h1 {
 p {
   margin: 4em 0 0 0;
   font-size: 1rem;
+  line-height: 32px;
 }
 
 .blob {
@@ -242,6 +243,7 @@ main {
 .about-us h2 {
   font-size: 2.2rem;
   font-weight: 500;
+  line-height: 58px;
 }
 
 .about-us img {
@@ -338,7 +340,7 @@ main {
 
 .why-us-content {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   align-items: center;
   justify-content: center;
 }
@@ -349,7 +351,8 @@ main {
 }
 
 .why-us-content p {
-  width: 50%;
+  width: 400px;
+  line-height: 37px;
 }
 
 /* WHY US - END */
@@ -468,6 +471,10 @@ p i:hover {
 
   .about-us {
     margin: 8rem auto 8rem auto;
+  }
+
+  .about-us h2 {
+    line-height: 48px;
   }
 
   .about-us img {
